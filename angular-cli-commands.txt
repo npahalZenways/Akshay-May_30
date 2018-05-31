@@ -1,0 +1,14 @@
+1. ng new application-name : creating a new application
+2. ng serve : to start application || building application and serving it to a local url
+3. ng build
+	--dev : builds an application in development mode and provides its output to dist folder
+	--prod : builds an application in production mode and provides its output to dist folder
+
+-----------------------------------------------------
+
+inbuilds:
+
+gulp/grunt : task runner
+
+webpack : module bundler
+webpack-dev-server : provides an development server
