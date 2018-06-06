@@ -1,0 +1,29 @@
+data binding
+
+1. One-way binding
+	- interpolation {{}}
+		component ========> View
+	- property binding []
+		component ========> View
+	- event binding ()
+		View ==========> Component
+
+2. Two-way binding [()]
+	View <=========> Component
+
+	-works on those elements which have a property x and event xChange
+
+----------------------
+
+in-built-directives
+
+1. Attribute directives - which work or appearance or properties of elements
+	ngModel - FormsModule
+	ngClass
+	ngSwitch
+	ngNonBindable
+2. Structural directives - work with structure of element and is responsible for creating or destroying those elements from DOM.
+	*ngIf
+	*ngFor
+	*ngSwitchCase
+	*ngSwitchDefault

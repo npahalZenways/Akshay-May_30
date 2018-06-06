@@ -1,0 +1,42 @@
+<!-- in-build-directives -->
+
+<!-- ngClass - condition based class binding -->
+<!-- syntax: [ngClass]="{ 'class-name': condition, 'second-class-name': condition }" -->
+
+<p [ngClass]="{ 'red': redClass, 'blue': blueClass }">
+  Example of ngClass
+</p>
+
+<!-- ngNonBindable -->
+<p ngNonBindable>
+  My name is {{myName}}
+</p>
+
+<input type="text" [(ngModel)]="myName">
+
+<!-- ngSwitch -->
+<div [ngSwitch]="myName">
+  <p *ngSwitchCase="'Nitin'">My name is Nitin</p>
+  <p *ngSwitchCase="'Amit'">My name is Amit</p>
+  <p *ngSwitchDefault>Not matched</p>
+</div>
+
+<!-- *ngIf -->
+<p *ngIf="myName == 'Nitin'; then trueCondition; else mypara">This is rendered using ngIf</p>
+
+<ng-template #trueCondition>
+  <p>
+    Condition is true
+  </p>
+</ng-template>
+<ng-template #mypara>
+  <p>This is else part</p>
+</ng-template>
+
+<!-- *ngForOf -->
+<!-- first, last, even, odd = true/false -->
+<p *ngFor="let element of myArr; let i = index; let f = first; let e= even">
+  <span *ngIf="e">
+    {{i}}.{{element}}
+  </span>
+</p>

@@ -1,0 +1,36 @@
+<!-- data binding -->
+<!-- one-way binding -->
+<!-- interpolation -->
+<p>
+    This is {{componentName}}
+</p>
+
+<p>
+    {{ isTrue ? 'This is true' : 'This is false' }}
+</p>
+
+<p>
+    4 + 4 = {{ 4 + 4 }}
+</p>
+
+<p>
+    Image url is: {{ imageUrl }}
+</p>
+
+<!-- property binding -->
+<img [src]="imageUrl" width="200px">
+
+<!-- condition based class binding -->
+<!--  syntax: [class.name-of-class]="condtion" -->
+<p [class.my-class]="!isTrue">
+    Class active will be renedered when value of isTrue is true
+</p>
+
+<!-- event binding -->
+<button (click)="changeImageUrl($event)">Click</button>
+<button (click)="changeBack()">Change back</button>
+
+<img [src]="imageUrl" width="200px">
+
+<input type="text" [(ngModel)]="componentName"> {{componentName}}
+
