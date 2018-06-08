@@ -1,0 +1,22 @@
+data sharing between components
+	- inputs, input decorator
+		- when we send data from parent component to child component that is called input
+		- property binding
+	- outputs, output decorator, Event emitter
+		- when we send data from child component to parent component that is called output
+		- event binding
+
+services
+	- providers
+	- different levels of providers
+	- tree shaking
+
+directives
+	- selector
+	- elementRef
+	- renderer2
+	- host
+	- hostListener
+	- hostBinding
+	- inputs and outputs
+
